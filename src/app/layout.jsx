@@ -5,10 +5,13 @@ import Tabs from './editor/tabs';
 import Profile from './profile/profile';
 import Menu from './menu/menu';
 import Logger from './logger/logger';
+import Service from './service/service';
 
 export const Layout = () => {
   return (
     <div className="layoutContainer">
+      <Service />
+
       <div className="mainArea">
         <div className="leftColumn">
           <div className="tabSelector">

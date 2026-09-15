@@ -5,19 +5,24 @@
   "type": "module",
   "scripts": {
     "build": "rsbuild build",
-    "dev": "rsbuild",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "dev:client": "rsbuild dev",
+    "dev:server": "tsx watch src/server/server.ts",
+    "dev": "concurrently -n \"CLIENT,SERVER\" -c \"cyan,magenta\" \"npm run dev:client\" \"npm run dev:server\""
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "socket.io": "^4.8.3",
     "socket.io-client": "^4.8.3",
     "zustand": "^5.0.15"
   },
   "devDependencies": {
     "@rsbuild/core": "^2.2.3",
     "@rsbuild/plugin-react": "^2.1.0",
-    "@types/node": "^26.4.1"
+    "@types/node": "^26.4.1",
+    "concurrently": "^10.0.5",
+    "tsx": "^4.23.13"
   }
 }

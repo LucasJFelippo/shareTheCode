@@ -1,7 +1,7 @@
 import http from 'http';
 import { Server } from 'socket.io';
 import { RoomManager } from './room/roomManager';
-import { CodeFile } from './codeFiles/codeFile';
+import { CodeFile } from './codeFile/codeFile';
 import { connHandlers, eventHandlers } from './socketsHandlers';
 
 const PORT = 4000;
