@@ -1,5 +1,36 @@
-# Share The Code
+# Rsbuild project
 
-_This is a small tool for a personal project of mine, it don't have major security guards, feel free to use it, but take care._
+## Setup
 
-Share the Code is a application that allow code sharing and editing within the browser.
+Install the dependencies:
+
+```bash
+npm install
+```
+
+## Get started
+
+Start the dev server, and the app will be available at [http://localhost:3000](http://localhost:3000).
+
+```bash
+npm run dev
+```
+
+Build the app for production:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Learn more
+
+To learn more about Rsbuild, check out the following resources:
+
+- [Rsbuild documentation](https://rsbuild.rs) - explore Rsbuild features and APIs.
+- [Rsbuild GitHub repository](https://github.com/web-infra-dev/rsbuild) - your feedback and contributions are welcome!

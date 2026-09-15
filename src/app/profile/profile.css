@@ -1,0 +1,177 @@
+.profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    background-color: #181818;
+    border-bottom: 1px solid #2d2d2d;
+    user-select: none;
+    border-radius: 20px;
+}
+
+.profileDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profileNickname {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.15s ease;
+}
+
+.profileNickname:hover {
+    color: #60a5fa;
+}
+
+.editIconHint {
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+.profileRoleBadge {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #10b981;
+}
+
+.profileAvatarButton {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #3b82f6;
+    background-color: #262626;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileAvatarButton:hover {
+    transform: scale(1.05);
+    border-color: #60a5fa;
+}
+
+.profileAvatarImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modalBox {
+    background-color: #202020;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 20px;
+    min-width: 280px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.modalTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e5e5e5;
+}
+
+.modalInput {
+    background-color: #121212;
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #ffffff;
+    font-size: 13px;
+    outline: none;
+}
+
+.modalInput:focus {
+    border-color: #3b82f6;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.modalBtn {
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.modalBtnSecondary {
+    background-color: #333333;
+    color: #cccccc;
+}
+
+.modalBtnSecondary:hover {
+    background-color: #3f3f3f;
+}
+
+.modalBtnPrimary {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+.modalBtnPrimary:hover {
+    background-color: #2563eb;
+}
+
+/* Avatar Selection Grid */
+.avatarSelectionGrid {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.avatarOptionCard {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.15s ease;
+    background-color: #121212;
+}
+
+.avatarOptionCard:hover {
+    transform: scale(1.08);
+}
+
+.avatarOptionCard.selectedOption {
+    border-color: #3b82f6;
+}
